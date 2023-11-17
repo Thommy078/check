@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liste de cadeaux</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Choisis ton cadeau</h1>
+  </header>
+  <main>
+    <section id="gift-list">
+      <h2>Liste de Cadeaux</h2>
+      <ul>
+        <li data-gift="cadeau1">Four</li>
+        <li data-gift="cadeau2">Micro-ondes</li>
+        <li data-gift="cadeau3">Tapis</li>
+        <!-- Ajoutez d'autres cadeaux selon vos besoins -->
+      </ul>
+    </section>
+    <section id="guest-selection">
+      <h2>Sélection de Cadeaux</h2>
+      <form id="gift-form">
+        <label for="guest-name">Votre Nom:</label>
+        <input type="text" id="guest-name" name="guest-name" required>
+        <label for="selected-gift">Choisissez un cadeau:</label>
+        <select id="selected-gift" name="selected-gift" required>
+          <option value="" disabled selected>Sélectionnez un cadeau</option>
+          <!-- Options générées dynamiquement en JavaScript -->
+        </select>
+        <button type="submit">Soumettre</button>
+      </form>
+    </section>
+    <!-- Ajout de la section pour les cadeaux sélectionnés -->
+    <section id="selected-gifts">
+      <h2>Cadeaux Sélectionnés</h2>
+      <table id="selected-gifts-table"></table>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 Site de Mariage</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
